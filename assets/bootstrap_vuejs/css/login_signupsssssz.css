@@ -1,0 +1,26 @@
+/*form for the login*/
+#app, #adminLogin{
+	width: 35%;
+	margin: auto;
+	display: block;
+	margin-top: 10%;
+	padding: 3%;
+}
+/*button for login*/
+.btn-login{
+	width: 100%;
+	border: none;
+}
+/*for the errors*/
+.error{
+	color: rgb(255,0,0);
+	font-size: 15px;
+}
+/*for the placeholder of the input*/
+input::placeholder{
+	font-size: 12px;
+}
+/*message for matched password*/
+.matched{
+	color: rgb(0,200,0);
+}
