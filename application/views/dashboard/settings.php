@@ -18,7 +18,7 @@
     <div class="col-lg-3 m-4">
        <div v-if="modal" id="modalDelete" style=""> <button class="close pull-right mr-3 mt-2" @click="modal = false">&times;</button>
                   <div class="modalHeader" style="">
-                    <h5 class="p-1">Delete Candidate</h5>
+                    <h5 class="p-1">Change Profile</h5>
 
                   </div>
                     <div class="modalBody"> 

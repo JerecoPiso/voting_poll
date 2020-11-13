@@ -32,7 +32,7 @@
 	</b-card>
 
 	<!-- form for the sign up-->
-	<b-card header="Log In" v-if="signupForm">
+	<b-card header="Signup" v-if="signupForm">
 	  	 <!-- username input field-->
 	  	  <div class="alert alert-danger text-center p-1" v-if="errors.signup">
 				<button type="button" class="close" @click="clearMessages();"><span aria-hidden="true">&times;</span></button>
@@ -72,7 +72,7 @@
 		   <i class="error" v-if="errors.pass2">{{ errors.pass2 }}</i>
 		   <i class="matched" v-if="errors.matched">{{ errors.matched }}</i>
 		  <!-- button for the login-->
-		  <button @click="signUp" class="btn btn-primary btn-login mt-3" v-bind:disabled="btnDisable">Log In</button><br> 
+		  <button @click="signUp" class="btn btn-primary btn-login mt-3" v-bind:disabled="btnDisable">Signup</button><br> 
 		   <a  @click="signupForm = false; loginForm = true">Already have an account?</a>
 	</b-card>
 </div>
