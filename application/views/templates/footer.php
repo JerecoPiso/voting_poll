@@ -2,7 +2,8 @@
 <script src="<?php echo base_url();?>assets/bootstrap_vuejs/js/vue.js"></script>
 <script src="<?php echo base_url();?>assets/bootstrap_vuejs/js/bootstrap_vue.js"></script>
 <script src="<?php echo base_url();?>assets/bootstrap_vuejs/js/axios.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="<?php echo base_url();?>assets/bootstrap_vuejs/js/jquery.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
 <script>
 
