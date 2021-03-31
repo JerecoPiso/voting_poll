@@ -490,8 +490,8 @@ $(document).ready(function(){
  		usedPoll: function(){
  			var id = loginSignup.toFormData(polls.polls_id);
  			axios.post("http://localhost/voting/index.php/dashboard/usedPoll",id).then(function(response){
- 					
- 				alert(response.data)
+ 				polls.getPoll()
+ 				// alert(response.data)
 
  				
  			});

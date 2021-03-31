@@ -13,5 +13,5 @@
   
     </ul>
   </div>
-  <a href="<?php echo base_url();?>index.php/dashboard/logout" class="nav-link"><span class="fa fa-sign-out"></span> Logout</a>
+  <a href="<?php echo base_url();?>index.php/dashboard/logout" class="nav-link logout"></span> Logout</a>
 </nav>

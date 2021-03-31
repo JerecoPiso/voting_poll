@@ -23,9 +23,9 @@
             <!-- Element to collapse -->
             <b-collapse id="collapse-2" style="position: absolute;">
               <div class="add-form">
-               <label>Position</label>
+               <label >Position</label>
                <input type="text" v-model="position.position"  class="form-control" name="" placeholder="Position...">
-                <label>Total Winner</label>
+                <label >Total Winner</label>
                 <input type="number" v-model="position.winner" class="form-control">
                 <label>Poll</label>
                 <select class="custom-select" v-model="position.poll_id">
@@ -90,7 +90,7 @@
                          <td>{{ pos.poll_name }}</td>
                       
                         <td>
-                           <button @click="edit = true; position.position = pos.position; position.winner = pos.winner; position.id = pos.id;" class="btn-edit"><span class="fa fa-pencil"></span> Edit</button>
+                           <button @click="edit = true; position.position = pos.position; position.winner = pos.winner; position.id = pos.id;" class="btn-edit"><span class="fa fa-edit"></span> Edit</button>
                            <button  @click="modal = true; position.id = pos.id;"  class="btn-delete" ><span class="fa fa-trash"></span> Delete</button>
                         </td>
                       </tr>

@@ -65,7 +65,7 @@
                   <label class="pull-left">Poll Name</label>
                   <input type="text" v-model="printPoll.poll_name" class="form-control"  placeholder="Poll name...">
                  
-                    <button type="button" class="edit mt-2" @click="editPoll(); modalEdit = false;">Edit</button>
+                    <button type="button" class="edit mt-2" @click="editPoll(); modalEdit = false;">  Edit</button>
                      
                   </div>
              </div>
@@ -93,7 +93,7 @@
             <li class="list-group-item" v-for="pol in poll_names">{{pol.poll_name}}
 
               <button  @click="printPoll.id = pol.id; modalDelete = true;"  class="poll_delete pull-right" ><span class="fa fa-trash"></span> Delete</button>
-              <button @click="modalEdit = true;printPoll.poll_name = pol.poll_name; printPoll.id = pol.id;" class="poll_edit pull-right"><span class="fa fa-pencil"></span> Edit</button>
+              <button @click="modalEdit = true;printPoll.poll_name = pol.poll_name; printPoll.id = pol.id;" class="poll_edit pull-right"><span class="fa fa-edit"></span> Edit</button>
               <button v-if="pol.status == 'used'"  @click="polls_id.poll_id = pol.id; unusedPoll();" class="pull-right unused mr-2">Unused <span class="  fa fa-toggle-off"></span></button> 
 
               <button v-else class="pull-right used mr-2" @click="polls_id.poll_id = pol.id; usedPoll(); ">Used <span class="  fa fa-toggle-on"></span></button>

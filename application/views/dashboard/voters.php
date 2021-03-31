@@ -33,14 +33,14 @@
                     
                         <th>ID</th>
                         <th>Name</th>
-                        <th>Status</th>
+                       
                    
                     </thead>
                     <tbody id="myTable" >
                             <tr  v-for="voter in voters">
                             <td>{{ voter.id }}</td>
                             <td>{{ voter.username }}</td>
-                            <td>Active</td>
+                          
                            
                             
                         </tr>
