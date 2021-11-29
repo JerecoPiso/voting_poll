@@ -10,7 +10,7 @@
 				<!--side nav bar of the voting page-->
 				<nav class="navbar">
 				   <ul class="navbar-nav">
-					<li class="nav-item"><a href="<?php echo base_url();?>index.php/" class="nav-link"><span class="fa fa-newspaper-o"></span> Platforms</a></li>
+			
 					 <li class="nav-item"><a href="<?php echo base_url();?>index.php/login/logout" class="nav-link"><span class="fa fa-sign-out mr-1"></span> Logout</a></li>
 				   </ul>
 		       </nav>

@@ -190,6 +190,11 @@ class Dashboard extends CI_Controller {
 			}
 			
 		}
+		public function haha(){
+			$ret = $this->dashboard_model->getCurrentPoll();
+			echo $ret['id'];
+			echo json_encode($ret);
+		}
 		//page for the list of the voters
 		public function voters(){
 			$this->load->view('templates/admin_header');
@@ -217,7 +222,9 @@ class Dashboard extends CI_Controller {
 
 		//function for getting the POSITION to be display in the UI
 		public function getPosition(){
-			$ret = $this->dashboard_model->position();
+			$return = $this->dashboard_model->getCurrentPoll();
+			// echo $ret['id'];
+			$ret = $this->dashboard_model->position($return['id']);
 			echo json_encode($ret);
 		}
 		//print to pdf all the position of each poll in the database

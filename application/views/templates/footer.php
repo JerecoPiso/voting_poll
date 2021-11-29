@@ -190,12 +190,14 @@ $(document).ready(function(){
 
 	   		  	      	//alert(res.data.msg)
 	   		  	      	loginSignup.errors.signup = res.data.msg;
+	   		  	      	loginSignup.success.signup = '';
 
 
 	   		  	      }else{
 
 	   		  	      	//alert(res.data.msg)
 	   		  	      	loginSignup.success.signup = res.data.msg;
+	   		  	      	loginSignup.errors.signup = ''
 	   		  	      	//loginSignup.clearMessages();
 	   		  	      }   		  
 
@@ -491,7 +493,7 @@ $(document).ready(function(){
  			var id = loginSignup.toFormData(polls.polls_id);
  			axios.post("http://localhost/voting/index.php/dashboard/usedPoll",id).then(function(response){
  				polls.getPoll()
- 				// alert(response.data)
+ 				// x
 
  				
  			});

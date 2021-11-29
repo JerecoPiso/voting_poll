@@ -134,10 +134,11 @@
 			return $query->result(); 
 		}
 		//get all the position in the database
-		public function position(){
+		public function position($poll_id){
 			$this->db->select('position.id, position.position, position.winner, poll.poll_name, poll.id as poll_id');
 			$this->db->from('position');
 			$this->db->join('poll', 'position.poll_id = poll.id');
+			$this->db->where('position.poll_id', $poll_id);
 			$this->db->order_by('poll.poll_name');
 			$query = $this->db->get();
 			return $query->result();
@@ -185,6 +186,14 @@
 			
 			$query = $this->db->get('voters');
 			return $query->result();
+
+		}
+		//get all the position in the database
+		public function getCurrentPoll(){
+			
+			$query = $this->db->get_where('poll', array('status'=>'used'));
+
+ 			return $query->row_array();
 
 		}
 		//add new candidate in a position in a poll
@@ -340,7 +349,7 @@
 		}
 		//get all the polls in the database
 		public function poll(){
-
+			$this->db->where('status', 'used');
 			$query = $this->db->get('poll');
 			return $query->result();
 
